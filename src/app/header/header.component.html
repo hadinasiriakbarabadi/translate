@@ -1,0 +1,7 @@
+<span class="nav-link">Select a Language</span>
+<select (change)="switchLang($event)">
+  <option *ngFor="let lang of langs | keyvalue" 
+   [value]="lang.key"   
+   [selected]="lang.key === currentLang"
+  > {{lang.value}} </option>
+</select>
