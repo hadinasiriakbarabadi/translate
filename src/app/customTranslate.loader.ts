@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 export class customTranslate implements TranslateLoader {
-  url: string= "http://example.com";
+  url: string= "http://localhost:4200";
   constructor(private http: HttpClient) { }
   getTranslation(lang: string): Observable<any> {
      // Here we are making http call to our server to get the 
